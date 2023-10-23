@@ -1,0 +1,42 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+    padding-top: 5vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+/* ====================================================== */
+
+.title::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: medium solid white;
+    background: red;
+    transform: translate(-150% , 10%);
+}
+
+.title::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: medium solid white;
+    background: blue;
+    transform: translate(50% , 10%);
+}
